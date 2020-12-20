@@ -10,7 +10,8 @@ node_modules/
 *.env
 
 # Build files
-build/
+#backend/dist/
+#backend/migrations/
 
 # Files that do not belong to the root folder
 /yarn.lock
