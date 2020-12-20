@@ -10,8 +10,8 @@ node_modules/
 *.env
 
 # Build files
-#backend/dist/
-#backend/migrations/
+backend/dist/
+backend/prisma/migrations/
 
 # Files that do not belong to the root folder
 /yarn.lock
@@ -22,5 +22,4 @@ node_modules/
 logs/
 
 # backend generated files
-backend/src/generated/
 backend/logs/
