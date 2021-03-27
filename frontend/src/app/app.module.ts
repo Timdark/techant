@@ -8,15 +8,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 
-// Material ui components
-import {MatToolbarModule} from '@angular/material/toolbar';
-
 // Components
 import { RssDataModule } from './components/rssData/rssData.module';
+import { TopbarComponent } from './components/topbar/topbar.component';
+import { BottombarComponent } from './components/bottombar/bottombar.component'
 
 @NgModule({
   declarations: [
     AppComponent,
+    TopbarComponent,
+    BottombarComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +25,6 @@ import { RssDataModule } from './components/rssData/rssData.module';
     BrowserAnimationsModule,
     GraphQLModule,
     HttpClientModule,
-    MatToolbarModule,
     RssDataModule,
   ],
   providers: [],

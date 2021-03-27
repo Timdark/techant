@@ -1,11 +1,3 @@
-@import '~@angular/material/theming';
-@include mat-core();
-
-.topbar {
-    background-color: rgb(223, 194, 200);
-}
-
-
 .content {
     min-width: 1200px;
     display: flex;

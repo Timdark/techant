@@ -1,4 +1,4 @@
-import {Component, Input, OnInit } from '@angular/core';
+import {Component, OnInit } from '@angular/core';
 import { Apollo, gql } from 'apollo-angular';
 
 import fromUnixTime from 'date-fns/fromUnixTime'
