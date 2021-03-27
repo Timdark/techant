@@ -9,19 +9,23 @@ import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 
 // Material ui components
+import {MatToolbarModule} from '@angular/material/toolbar';
 
+// Components
+import { RssDataModule } from './components/rssData/rssData.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
     BrowserAnimationsModule,
     GraphQLModule,
     HttpClientModule,
+    MatToolbarModule,
+    RssDataModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

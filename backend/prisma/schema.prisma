@@ -15,6 +15,7 @@ model RssData {
   createdAt     DateTime    @default(now())
   updatedAt     DateTime    @updatedAt
   siteName      String
+  siteIcon      String
   title         String
   linkUrl       String
   date          DateTime
