@@ -1,0 +1,11 @@
+<div class="card" role="main" *ngFor="let data of rssData">
+  <img src="{{ data.siteIcon }}" class="icon">
+  <div>
+    <div class="card-header">
+      <a href="{{ data.linkUrl }}">{{ data.title }}</a> 
+    </div>
+    <div class="card-content">
+      {{ data.siteName }} - {{ data.date }}
+    </div>
+  </div>
+</div>

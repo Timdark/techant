@@ -1,9 +1,9 @@
 #! dockerfile
-FROM node:slim
+FROM node
 
 COPY ./backend /opt/app
 RUN cd /opt/app && npm install
 
 WORKDIR /opt/app
 
-CMD ["npm", "start", "dev"]
+CMD ["npm", "run", "dev"]

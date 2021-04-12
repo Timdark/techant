@@ -4,6 +4,7 @@ export default `
         createdAt: String!
         updatedAt: String!
         siteName: String
+        siteIcon: String
         title: String
         linkUrl: String
         date: String
