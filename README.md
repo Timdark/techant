@@ -7,7 +7,6 @@ IT technical web sites rss feed listening and showing news by update time with l
 ### FrontEnd
 
 - UI
-- Material ui
 - Apollo client wrapper
 
 ### Backend
@@ -20,7 +19,6 @@ IT technical web sites rss feed listening and showing news by update time with l
 ### Frontend
 
 - Angular
-- Material UI
 - Apollo client
 - TypeScript
 
