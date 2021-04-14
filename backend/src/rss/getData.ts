@@ -23,12 +23,8 @@ const anandtech = async () => {
     }
 }
 
-export default async () => {
-    // Clear table
-    await prisma.rssData.deleteMany({})
-
-    // Anandtech
-    /*let feed = await parser.parseURL('https://www.anandtech.com/rss');
+const pcper = async () => {
+    let feed = await parser.parseURL('https://pcper.com/feed/');
 
     let site = feed.title;
     let icon = feed.image?.url;
@@ -43,6 +39,21 @@ export default async () => {
                 date: new Date(String(item.isoDate))
             }
         })
-    }*/
+    }
+}
+
+/*
+
+
+*/
+
+export default async () => {
+    // Clear table
+    await prisma.rssData.deleteMany({})
+
+    // Anandtech
     anandtech()
+
+    // PCPer
+    pcper()
 };
