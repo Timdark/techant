@@ -1,7 +1,7 @@
 import {Component, OnInit } from '@angular/core';
 import { Apollo, gql } from 'apollo-angular';
 
-import fromUnixTime from 'date-fns/fromUnixTime'
+import format from 'date-fns/format'
 
 @Component({
   selector: 'rssData',
@@ -38,7 +38,7 @@ export class RssDataComponent implements OnInit {
           siteIcon: x.siteIcon,
           title: x.title,
           linkUrl: x.linkUrl,
-          date: fromUnixTime(x.date)
+          date: format(new Date(parseInt(x.date)), 'dd/MM/yyyy p')
         })
       })
     });
